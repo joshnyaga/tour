@@ -1,38 +1,81 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+  margin:0;
+  padding:0;
+
+}
+body{
+  font-family: 'Inter', sans-serif;
+}
+header{
+  background: #F55A5A;
   text-align: center;
+  position: fixed;
+  top:0;
+  width: 100%;
+  z-index: 1000;
+  
+}
+header h2{
+  padding: 20px 16px;
+  color: #fff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 5rem;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  
 }
-
-.App-link {
-  color: #61dafb;
+.img--container{
+  flex: 1 0 5rem;
+  position: relative;
+  height: 18rem;
 }
+.card--img{
+  width: 100%;
+  object-fit:cover;
+  height: 100%;
+  position: relative;
+  border-radius: 20px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.card--info{
+  padding-top: 2rem;
+  flex: 1 1 30rem;
+}
+.card--top{
+  display: flex;
+  gap: 1rem;
+}
+.card--top i{
+  color: #F55A5A;
+}
+.card--country{
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 10px;
+  color: #2B283A;
+  
+}
+.card--maps{
+  border-bottom: 1px solid #918E9B;
+  color: #918E9B;
+  font-size: 10px;
+}
+.card--places{
+  font-weight: bold;
+  font-size: 2rem;
+  padding: .7rem 0;
+  line-height: 30.26px;
+}
+.card--date{
+  font-weight: bold;
+  font-size: 10px;
+  padding-top: 1.2rem;
+}
+.card--desc{
+  line-height: 30.36px;
+  font-size: .9rem;
 }
